@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		#pp{
+			width: 200px;
+			height: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box" title="nishizhu">
+		<p id="pp">fkfgkk</p>
+		<span>dffgfg</span>
+	</div>
+	<form name="iii">
+		<input  tabindex="1" id="in">
+		<input tabindex="3">
+		<input tabindex="2">
+
+	</form>
+	<script>
+		var a = document.getElementsByTagName('div')[0];
+		var b =a.id
+		document.write(b);
+
+		var c = a.attributes;
+
+		// var d =document.documentElement.ClientHeight;
+		// var f = document.body.ClientHeight;
+
+		var x = a.children.length;
+		var f = document.getElementsByTagName('div')[0].firstElementChild;
+		var g = document.getElementsByTagName("div")[0].lastElementChild;
+
+		var h =document.getElementsByTagName("p")[0].nextElementSibling;
+var o =	document.getElementById("in");
+o.setAttribute("type","text");
+	</script>
+</body>
+</html>

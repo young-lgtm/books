@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.a li{
+			list-style: none;
+			width: 150px;
+			height: 30px;
+			background-color: #666;
+			text-align: center;;
+			line-height: 30px;
+		}
+		.a>li{
+			float: left;
+		}
+		.b{
+			display: none;
+
+		}
+		.a>li:hover .b{
+			display: block;
+		}
+		.a>li:hover{
+			background-color: #333;
+		}
+		.c{
+			display: none;
+		}
+		.b>li:hover .c{
+			display: block;
+		}
+		.b>li{
+			position: relative;
+		}
+		.c{
+			position: absolute;
+			top:0;
+			left:150px;
+		}
+
+	</style>
+</head>              
+<body>
+	<ul class="a">
+		<li>111
+			<ul class="b">
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>111
+			<ul class="b">
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>111
+			<ul class="b">
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

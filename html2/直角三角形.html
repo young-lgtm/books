@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		span{
+			width: 20px;
+			display: inline-block;
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		// for(var a =1; a<=10;a++){
+		// 	for(var c=1;c<=20; c++){
+		// 	  document.write("<span></span>");
+		// 	}
+		// 	for(var b =1;b<=a;b++){
+		// 	  document.write("<span>*</span>");
+		// 	}
+		// 	  document.write("<br/>");
+		// }
+
+		for(var a =1; a<=5; a++){
+			for(var c=4;c>0;c--){
+			   document.write("<span><span>");
+			}
+			for(var b =1; b<=2*a-1;b++){
+			   document.write("<span>*</span>");
+			}
+			   document.write("<br/>");
+		}
+
+	</script>
+</body>
+</html>

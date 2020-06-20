@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		span{
+			width: 20px;
+			display: inline-block;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<script>
+
+		var rows=+prompt();
+		if(rows%2===0){
+			alert("你输错了了！");
+		}else{
+		var arows=parseInt(rows/2)+1;
+		var cols =rows-arows;
+		console.log(cols);
+		for(var i =1; i<=arows;i++){
+			for(var a=1;a<=20+arows-i;a++){
+				document.write("<span></span>");
+			}
+
+			for(var b=1;b<=2*i-1;b++){
+				if(b===1|| b===2*i-1){
+				document.write("<span>*</span>");
+				}else{
+					document.write("<span></span>");
+				}
+				
+			}
+			document.write("<br>");
+		}
+		for(var j=1;j<=cols;j++){
+			for(var c=1;c<=j-1+21;c++){
+				document.write("<span></span>");
+			}
+			for(var d =1; d<=rows-j*2;d++){
+				if(d===1 || d===rows-j*2){
+				 document.write("<span>*</span>");
+				}else{
+				 document.write("<span></span>");
+				}
+				
+			}
+			document.write("<br>");
+		}
+	}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		body{
+			background-image: url(../images/背景.png);
+			background-image: no-repeat;
+			background-size: cover;
+		}
+		.box{
+			width: 600px;
+			height: 500px;
+			background-color: white/*transparent*/;
+			margin: 30px auto;
+			margin-top: 100px;
+
+		}
+		.top{
+			width: 600px;
+			height: 150px;
+		}
+		.top1{
+			display: inline-block;
+			margin: 30px 40px;
+			font-size: 23px;
+		}
+		.top1:hover{
+			font-size: 25px;
+			font-weight: bold;
+			border-bottom: 2px solid blue;
+		}
+		.number{
+			width: 600px;
+			height: 40px;
+			position: relative;
+			border-bottom: 1px solid #ddd;
+		}
+		.password{
+			width: 600px;
+			height: 40px;
+			position: relative;
+			border-bottom: 1px solid #ddd;
+			margin-top: 50px;
+		}
+		.pn{
+			width: 600px;
+			height: 100px;
+			margin: 10px 10px;
+		}
+		label{
+			position: absolute;
+			left: 40px;
+		}
+		input{
+			position: absolute;
+			left: 40px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+		.aaa{
+			margin-right: 370px;
+
+		}
+		a{
+			text-decoration: none;
+			color: blue;
+			margin-left: 6px;
+		}
+		button{
+			width: 550px;
+			height: 50px;
+			background-color: blue;
+			color: white;
+			text-align: center;
+			line-height: 50px;
+			margin-left: 21px;
+			border: none;
+			border-radius: 8px;
+		}
+		.img{
+			margin-left: 540px;
+		}
+	</style>
+</head>
+<body>
+	<div class="big">
+	<div class="box">
+		<div class="top">
+			<div class="top1">免密码登录</div>
+			<div class="top1">密码登录</div>
+		</div>
+		<div class="number">
+			<label id="label1">手机号或邮箱</label>
+			<input type="text" id="input1">
+		</div>
+		<div class="password">
+			<label id="label2">密码</label>
+			<input type="text" id="input2">
+			<img src="../images/111.png" class="img" id="img" />
+		</div>
+		<div class="pn">
+			<a href="#" class="aaa">海外手机号登录</a>
+			<a href="#">忘记密码？</a>
+		</div>
+		<button>
+			注册/登录
+		</button>
+	</div>
+	</div>
+	<script type="text/javascript">
+		var a =  document.getElementById('label1');
+		var b =  document.getElementById('input1');
+		var c =  document.getElementById('label2');
+		var d =  document.getElementById('input2');
+		var e =  document.getElementById('img');
+		var f = true;
+		b.onkeyup = function () {
+			if (b.value !="") {
+				a.innerHTML="";
+			}	else{
+				a.innerHTML="手机号或邮箱";
+			}
+		}
+		d.onkeyup =function(){
+			if (d.value!="") {
+				c.innerHTML="";
+			}else{
+				c.innerHTML="密码";
+			}
+		}
+		
+		e.onclick  = function(){
+			f = !f;
+			if (f) {
+				e.src="../images/111.png";
+			}else{
+				e.src="../images/222.png";
+			}
+		}
+
+
+	</script>
+</body>
+</html>

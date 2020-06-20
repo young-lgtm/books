@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		.ul1{
+			margin: 0 auto;
+		}
+		li{
+			text-align: center;
+		}
+		.li1{
+			float: left;
+			width: 100px;
+			background-color: gray;
+		}
+		.li2{
+			display: none;
+			width: 100px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+
+		}
+		.li1:hover .li2{
+			display: block;
+			background-color: pink;
+		}
+		.li2{
+			position: relative;
+		}
+		.li3{
+			display: none;
+			position: absolute;
+			width: 100px;
+			height: 20px;
+			background-color: green;
+			left: 100px;
+			top: 0px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.li4{
+			display: none;
+			position: absolute;
+			width: 100px;
+			height: 20px;
+			background-color: green;
+			left: 100px;
+			top: 20px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.li5{
+			display: none;
+			position: absolute;
+			width: 100px;
+			height: 20px;
+			background-color: green;
+			left: 100px;
+			top: 40px;
+			text-align: center;
+			line-height: 20px;
+		}
+
+		.li2:hover .li3{
+
+			display: block;
+
+		}
+		.li2:hover .li4{
+
+			display: block;
+
+		}
+		.li2:hover .li5{
+
+			display: block;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<ul class="ul1">
+			<li class="li1">AAA
+				<ul class="ul2">
+					<li class="li2">111
+						<ul class="ul3">
+							<li class="li3">222</li>
+							<li class="li4">222</li>
+							<li class="li5">222</li>
+						</ul>
+					</li>
+					<li class="li2">111
+						<ul class="ul3">
+							<li class="li3">222</li>
+							<li class="li4">222</li>
+							<li class="li5">222</li>
+						</ul>
+					</li>
+					<li class="li2">111
+						<ul class="ul3">
+							<li class="li3">222</li>
+							<li class="li4">222</li>
+							<li class="li5
+							">222</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="li1">BBB
+				<ul class="ul2">
+					<li class="li2">111
+						<ul class="ul3">
+							<li class="li3">222</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="li1">CCC
+				<ul class="ul2">
+					<li class="li2">111
+						<ul class="ul3">
+							<li class="li3">222</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

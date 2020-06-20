@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function arr(year){
+			if(year%400==0 || year%4==0&& year%100!=0){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		document.write(arr(2010));
+
+		function prime(num){
+			var isYes = false;
+			for(var i =2; i<num; i++){
+				if(num % i==0){
+					isYes=true;
+					break;
+				}
+			}
+			return !isYes;
+		}
+		alert(prime(7));
+
+		document.write()
+
+	</script>	
+</body>
+</html>

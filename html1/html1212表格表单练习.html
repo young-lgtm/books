@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			width: 1400px;
+			height: 800px;
+			background-color: pink;
+		}
+		.box2{
+			position: relative;
+			width: 800px;
+			height: 600px;
+			background-color: transparent;
+			border: 2px solid #eee;
+			top: 100px;
+			left: 300px;
+		}
+		.left{
+			width: 280px;
+			height:350px;
+			position: absolute;
+			left: 50px;
+			top:100px;
+			line-height: 350px;
+			color: white;
+			font-size: 22px;
+		}
+		.middle{
+			position: absolute;
+			top: 100px;
+			left: 350px;
+			width: 0px;
+			height: 350px;
+			border-right: 3px solid white;
+		}
+		.right{
+			position: absolute;
+			top: 100px;
+			right: 80px;
+			width: 300px;
+			height: 350px;
+		}
+		.right1{
+			font-size: 22px;
+			color:white;
+			margin-left: 50px;
+			margin-right:100px;
+			display: inline-block;
+		}
+		.right2{
+			font-size: 22px;
+			color:white;
+			margin-left:10px;
+			display: inline-block;
+		}
+		.right3{
+			position: relative;
+			width: 300px;
+			height: 90px;
+			margin-top: 30px;
+		}
+		.right4{
+			position: relative;
+			width: 300px;
+			height: 90px;
+			margin-top: 10px;
+		}
+		.right5{
+			position: relative;
+			width: 300px;
+			height: 90px;
+			margin-top: 30px;
+			text-align: center;
+		}
+		.right3>input{
+			position: absolute;
+			left: 50px;
+			top: 10px;
+			height: 40px;
+			background-color: transparent;
+			border-radius: 20px;
+			border: 1px solid white;
+			outline: none;
+		}
+		.right4>input{
+			position: absolute;
+			left: 50px;
+			top: 10px;
+			height: 40px;
+			background-color: transparent;
+			border-radius: 20px;
+			border: 1px solid white;
+			outline: none;
+		}
+		.right5 button{
+			margin-top: 20px;
+			color: white;
+			width: 120px;
+			border: 1px solid white;
+			border-radius: 10px;
+			background-color: transparent;
+			outline: none;
+		}
+		img{
+			position: absolute;
+			top: 8px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<div class="left">
+				Welcome to UI 100 Day	
+			</div>
+			<div class="middle">
+			</div>
+			<div class="right">
+				<div class="right1">
+					hello
+				</div>
+				<div class="right2">
+					 word
+				</div>
+				<div class="right3">
+					<img src="../images/user.png" alt="出现错误">
+					<input type="text">	
+				</div>
+				<div class="right4">
+					<img src="../images/pass.png" alt="出现错误">
+					<input type="text">	
+				</div>
+				<div class="right5">
+					<button>
+						LOGIN
+					</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

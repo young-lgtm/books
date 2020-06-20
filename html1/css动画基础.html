@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 50px auto ;
+            animation: pulse 5s;
+            /*transition: all 1s;*/
+            /*transform: translate(100px ,500px);*/
+        }
+/*        .box:hover{
+            transform: scale(3) rotate(180deg);
+        }*/
+        @keyframes pulse{
+            from{
+                transform: scale3d(1,1,1);
+            }
+            25%{
+                transform: scale3d(1.2,1.2,1.2);
+            }
+            50%{
+                transform: scale3d(1.5,1.5,1.5);
+            }
+            75%{
+                transform: scale3d(2,2,2);
+            }
+            to{
+                transform: scale3d(3,3,3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">你好的方法发光管韩国</div>
+</body>
+</html>

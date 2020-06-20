@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格</title>
+	<style type="">
+		.big{
+			border:3px #FF6600 ;
+			border-collapse: collapse;
+		}
+		thead{
+			background-color: #FFCC33;
+			border: 3px #FF6600;
+		}
+		.big1{
+			margin-left:150px;
+			margin-top: 30px;
+			border-collapse: collapse;
+		}
+		.body{
+			margin-bottom:10px;
+		}
+	</style>
+</head>
+<body>
+	<table border="1px" width="600px"  class="big">
+		<caption>北京各大影院三月份演出资讯
+		</caption>
+		<thead>
+			<tr>
+				<th>片名</th>
+				<th>日期</th>
+				<th>时间</th>
+				<th>电影院</th>
+				<th>票价</th>
+			</tr>
+		</thead>
+		<body>
+			<tr>
+				<td rowspan="2">卡拉是条狗</td>
+				<td rowspan="3">3月7日</td>
+				<td rowspan="6">7:30</td>
+				<td rowspan="2">红楼电影院</td>
+				<td>小厅：40</td>
+			</tr>
+			<tr>
+				<td>大厅：50</td>
+			</tr>
+			<tr>
+				<td>谍海计中计</td>
+				<td>化石电影院</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>正义守望者</td>
+				<td>3月8日</td>
+				<td rowspan="3">滑行国际影院</td>
+				<td>小厅：35</td>
+			</tr>
+			<tr>
+				<td>周瑜的候车</td>
+				<td>3月10日</td>
+				<td>大厅：50</td>
+			</tr>
+			<tr>
+				<td>冰川时代</td>
+				<td>3月11日</td>
+				<td>情侣座：80</td>
+			</tr>
+		</body>	
+	</table>
+	<table border="1px" class="big1">
+		<caption class="body">定票电话</caption>
+		<tbody>
+			<tr>
+				<td>红楼影院</td>
+				<td>01066051908</td>
+				<td>01066051908</td>
+			</tr>
+			<tr>
+				<td>花式电影院</td>
+				<td>01066051908</td>
+				<td>01066051908</td>
+			</tr>
+			<tr>
+				<td>华星电影院</td>
+				<td colspan="2">01066051908</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

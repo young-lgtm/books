@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.box{
+			background-color: pink;
+			width: 300px;
+		}
+		.botton{
+			padding-left: 30px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table class="box">
+			<thead>
+				<tr>
+					<th >信息</th>
+					<th>文本框</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="right">用户名：
+				</td>
+				<td>
+					<input type="text" name="name">
+				</td>
+			</tr>
+				<td align="right">密码：
+				</td>
+				<td>
+					<input type="password" name="password">
+				</td>
+			<tr>
+				<td align="right">年龄：
+				</td>
+				<td>
+					<input type="text" name="age">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">性别：
+				</td>
+				<td>
+					<input type="radio" name="sex">男
+					<input type="radio" name="sex">女
+				</td>
+			</tr>
+			<tr>
+				<td align="right">爱好：
+				</td>
+				<td>
+					<input type="checkbox" name="hobby">抓鱼
+					<input type="checkbox" name="hobby">抓虾
+					<input type="checkbox" name="hobby">抓蛤蟆
+				</td>
+			</tr>
+			<tr>
+				<td align="right">城市：
+				</td>
+				<td>
+					<select>
+						<option>&nbsp;</option>
+						<option>请选择</option>
+						<option>上海</option>
+						<option>北京</option>
+						<option>杭州</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">个人简介：
+				</td>
+				<td>
+					<textarea cols="20" rows="10">是谁的心啊，孤单的留下</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="botton">
+					<input type="submit" name="submit" style="width:50px; height: 30px; border-radius: 5px;">
+					<input type="reset" name="reset"  style="width:50px; height: 30px; border-radius: 5px;">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

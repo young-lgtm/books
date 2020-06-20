@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.a li{
+			list-style: none;
+			width: 150px;
+			height: 30px;
+			background-color: #666;
+			text-align: center;
+			line-height: 30px;
+		}
+		.a>li{
+			float: left; 
+		}
+		.b{
+			display: none;
+			background-color: #888;
+		}
+		.a>li:hover .b{
+			display: block;
+			cursor: pointer; 
+		}
+		.a>li:hover{
+			background-color: #999;
+		}
+		.b>li{
+			position: relative;
+		}
+		.b>li:hover{
+			background-color: #fff;
+		}
+		.c{
+			display: none;
+			position: absolute;
+			left: 150px;
+			top: 0;                 
+		}
+		.c>li:hover{
+			background-color: green;
+		}
+		.b>li:hover .c{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<ul class="a">
+		<li>111
+			<ul class="b">
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+			</ul>
+		</li>	
+		<li>111
+			<ul class="b">
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>111
+			<ul class="b">
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+				<li>222
+					<ul class="c">
+						<li>333</li>
+						<li>333</li>
+						<li>333</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

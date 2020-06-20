@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.box{
+			position: relative;
+			width: 100px;
+			height: 40px;
+			background-color: lightgreen;
+			text-align: center;
+			margin:50px;
+			line-height: 40px;
+			color: white;
+			border-radius: 5px;
+		}
+		.box:after{
+			position: absolute;
+			width: 0;
+			height: 0;
+			content: '\200B';
+			border:10px solid transparent;
+			/*opacity: 0;*/
+			border-right-color: lightgreen;
+			right: 100px;
+			top: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		hello
+	</div>
+</body>
+</html>

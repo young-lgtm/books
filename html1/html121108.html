@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		.box1{
+			width: 600px;
+			margin: 0 auto;
+		}
+		.box1>li{
+			float: left;
+			width: 50px;
+			height: 20px;
+			position: relative;
+			background-color: blue;
+		}
+		.li2{
+			display: none;
+
+		}
+		.box1>li:hover .li2{
+			cursor: pointer;
+			display: block;
+			width: 50px;
+			height: 20px;
+			background-color: green;	
+		}
+		.ul{
+			position: relative;
+			top: -20px;
+			left: 50px;
+		}
+		.li3{
+			display: none;
+			width: 50px;
+			height: 20px;
+		}
+		.li2:hover .li3{
+			display: block;
+		
+			cursor: pointer;
+			background-color: yellow;
+		/*	top: -20px;
+			left: 50px;*/
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="box1">
+		<li>aaa
+			<ul>
+				<li class="li2">bbb
+					<ul class="ul">
+						<li class="li3">ccc</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<!-- <li>hhhh</li> -->
+	</ul>
+</body>
+</html>

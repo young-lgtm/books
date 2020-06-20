@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var a = new Array(5);
+		// console.log(a.length);
+		// a.length=3;
+		// console.log(a);
+		// var a=[11,22,33,44,55];
+		// a.length=10;
+		// console.log(a);
+		// var b ={
+		// 	name:"xiaoming",
+		// 	sex:"女"
+		// };
+		// document.write(typeof b);
+		// var a =[11,22,33,44,55];
+		// document.write(typeof a);
+
+		// document.write(Array.isArray(b));
+		// document.write(Array.isArray(a));
+
+		// function test(p){
+		// 	if(Array.isArray(p)){
+
+
+		// 	}else if(typeof p==="function"){
+		// 		p();
+		// 	}else if(typeof p==="object"){
+		// 		document.write(p);
+		// 	}
+		// 	return p;
+		// }
+
+		// var s =test([11,22,33,44]);
+		// document.write(s);
+		// function toString(p) {
+  //           var s = "";
+  //           if (Array.isArray(p)) {
+  //               for (var i = 0, len = p.length; i < len; i++) {
+  //                   if (i !== len - 1) {   // 说明不是最后一个元素
+  //                       s = s + p[i] + ","
+  //                   } else {
+  //                       s = s + p[i];
+  //                   }
+  //               }
+  //           }
+  //           return s;
+  //       }
+
+  //       console.log(toString(arr));
+
+
+  //       console.log(arr.toLocaleString());
+
+  //       console.log(arr);    // 自动调用arr.valueOf()
+
+  //       console.log(arr.valueOf());
+
+		// var arr=[11,22,33];
+		// document.write(arr);
+		// var s = arr.toString();
+		// document.write(s);
+		// document.write(s,typeof s);
+
+		// function toString(p){
+		// 	var s ="";
+		// 	if(Array.isArray(p)){
+		// 		for(var i=0,len=p.length; i<len;i++){
+		// 			if(i!==len-1){
+		// 				s=s+p[i]+",";
+		// 			}else{
+		// 				s=s+p[i];
+		// 			}
+		// 		}
+		// 	}
+		// 	return s;
+		// }
+
+		// console.log(toString(arr));
+		// var arr=[11,22,33,44,55];
+		// function toString(p){
+		// 	var s =0;
+		// 	if(Array.isArray(p)){
+		// 		for(var i =0, len=p.length; i<len; i++){
+		// 			if(i!==len-1){
+		// 				s=s+p[i]+",";
+		// 			}else{
+		// 				s=s+p[i];
+		// 			}
+		// 		}
+		// 	}
+		// 	return s;
+		// }
+
+		// document.write(toString(arr));
+
+		// var arr=[22,33,44,55,66,77];
+		function toString(p){
+			var s =0;
+			if(Array.isArray(p)){
+				for(var i =0,len=p.length; i<len; i++){
+					if(i!==len-1){
+						s=s+p[i]+",";
+					}else{
+						s=s+p[i];
+					}
+				}
+			}else{
+				document.write("no");
+			}
+			return s;
+		}
+		var arr={
+			name:"你好",
+			sex:"男"
+		};
+
+		document.write(toString(arr));
+
+	</script>
+</body>
+</html>
