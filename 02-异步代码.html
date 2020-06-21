@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // js中的计时功能setInterval和setTimeout属于最基础的异步任务
+    console.log("start");   // 1. start
+
+    setTimeout(function() {  // 2. 异步任务直接进入task queue
+      console.log("test");  // 5. test
+    }, 0);
+
+    console.log("end");  // 3. end
+
+    for(var i = 0; i < 100; i++) {   // 4. 100次hello
+      console.log("hello"); 
+    }
+    /*
+    start
+    end
+    test
+    */
+  </script>
+</body>
+</html>
